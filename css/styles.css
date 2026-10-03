@@ -52,7 +52,7 @@ img, svg { display: block; }
 @media (prefers-color-scheme: dark) { html, body { background: #ffffff; color: #4d4d4d; } }
 
 /* ---------- Artboard ---------- */
-.page { position: relative; background: var(--color-bg); width: 100%; aspect-ratio: 1920 / 3574; overflow: hidden; container-type: inline-size; }
+.page { position: relative; background: var(--color-bg); width: 100%; aspect-ratio: 1920 / 3612; overflow: hidden; container-type: inline-size; }
 @supports (width: 1cqw) { .page > section, .page > header, .page > footer { --u: calc(100cqw / 1920); } }
 .page > :where(section, header, footer) { position: absolute; left: 0; width: 100%; }
 
@@ -214,7 +214,7 @@ img, svg { display: block; }
 /* ==========================================================================
    CALL TO ACTION
    ========================================================================== */
-.cta { top: calc(3112 * var(--u)); height: calc(173 * var(--u)); }
+.cta { top: calc(3150 * var(--u)); height: calc(173 * var(--u)); }
 .cta__band { left: calc(118 * var(--u)); top: calc(0.2 * var(--u)); width: calc(1684.8 * var(--u)); height: calc(172.8 * var(--u)); background: var(--color-olive); border-radius: calc(15.5 * var(--u)); }
 .cta__envelope { left: calc(210 * var(--u)); top: calc(53 * var(--u)); width: calc(100 * var(--u)); height: calc(70 * var(--u)); }
 .cta__title { left: calc(379.9 * var(--u)); top: calc(36.22 * var(--u)); font: 600 calc(55.2 * var(--u))/calc(49 * var(--u)) var(--font-serif); letter-spacing: -0.02em; color: var(--color-sage); }
@@ -228,7 +228,7 @@ img, svg { display: block; }
 /* ==========================================================================
    FOOTER
    ========================================================================== */
-.footer { top: calc(3340 * var(--u)); height: calc(160 * var(--u)); }
+.footer { top: calc(3378 * var(--u)); height: calc(160 * var(--u)); }
 .footer__connect { right: calc(117.2 * var(--u)); top: calc(2.52 * var(--u)); font: 400 calc(23 * var(--u))/calc(28 * var(--u)) var(--font-sans); color: var(--color-text); }
 .footer__social { top: calc(35 * var(--u)); display: block; }
 .footer__social--linkedin { left: calc(1648 * var(--u)); width: calc(48 * var(--u)); height: calc(49 * var(--u)); }

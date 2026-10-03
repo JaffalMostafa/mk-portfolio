@@ -5,7 +5,7 @@
    Fonts, colour tokens and base resets come from styles.css.
    ========================================================================== */
 
-.pp { --u: calc(100vw / 1024); position: relative; width: 100%; aspect-ratio: 1024 / 1670; overflow: hidden; container-type: inline-size; background: #fdfdfb; }
+.pp { --u: calc(100vw / 1024); position: relative; width: 100%; aspect-ratio: 1024 / 1690; overflow: hidden; container-type: inline-size; background: #fdfdfb; }
 @supports (width: 1cqw) { .pp > header, .pp > section, .pp > footer { --u: calc(100cqw / 1024); } }
 .pp > :where(header, section, footer) { position: absolute; left: 0; width: 100%; }
 
@@ -36,7 +36,7 @@
 .card__text { left: calc(17 * var(--u)); top: calc((var(--ih) + 56.5) * var(--u)); width: calc(276 * var(--u)); margin: 0; font: 400 calc(12.8 * var(--u))/calc(16 * var(--u)) var(--font-sans); color: var(--color-text); }
 .card__arrow { left: calc(272 * var(--u)); top: calc((var(--ih) + 97) * var(--u)); width: calc(21 * var(--u)); height: calc(12.4 * var(--u)); }
 /* ---------- Call to action ---------- */
-.pp-cta { top: calc(1428 * var(--u)); height: calc(88 * var(--u)); }
+.pp-cta { top: calc(1448 * var(--u)); height: calc(88 * var(--u)); }
 .pp-cta__band { left: calc(29 * var(--u)); top: 0; width: calc(965 * var(--u)); height: calc(88 * var(--u)); background: #544c35; border-radius: calc(9 * var(--u)); }
 .pp-cta__envelope { left: calc(60 * var(--u)); top: calc(24 * var(--u)); width: calc(58 * var(--u)); height: calc(40.6 * var(--u)); }
 .pp-cta__title { left: calc(148 * var(--u)); top: calc(19 * var(--u)); font: 600 calc(28 * var(--u))/calc(29 * var(--u)) var(--font-serif); letter-spacing: -0.02em; color: var(--color-sage); }
@@ -50,7 +50,7 @@
 .pp-cta__button-arrow { left: calc(126 * var(--u)); top: calc(15 * var(--u)); width: calc(27 * var(--u)); height: calc(12 * var(--u)); }
 
 /* ---------- Site footer (same as Home page, drawn on a 1920-unit scale) ---------- */
-.pp > .sp-footer { --u: calc(100vw / 1920); position: absolute; left: 0; width: 100%; top: calc(2897.5 * var(--u)); height: calc(160 * var(--u)); }
+.pp > .sp-footer { --u: calc(100vw / 1920); position: absolute; left: 0; width: 100%; top: calc(2935 * var(--u)); height: calc(160 * var(--u)); }
 @supports (width: 1cqw) { .pp > .sp-footer { --u: calc(100cqw / 1920); } }
 .sp-footer--projects .footer__connect { right: calc(56.25 * var(--u)); }
 .sp-footer--projects .footer__social--linkedin { left: calc(1709.75 * var(--u)); }
