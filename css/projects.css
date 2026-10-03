@@ -29,7 +29,7 @@
 .card__photo { position: absolute; left: 0; top: 0; width: 100%; height: calc(188 * var(--u)); object-fit: cover; display: block; }
 .card__photo--city { object-position: 50% 55%; }
 .card__title { left: calc(17 * var(--u)); top: calc(194 * var(--u)); font: 600 calc(20 * var(--u))/calc(24 * var(--u)) var(--font-serif); color: var(--color-text); }
-.card__title--long { font-size: calc(18 * var(--u)); }
+.card__title--long { font-size: calc(14.2 * var(--u)); }
 .card__cats { left: calc(17 * var(--u)); top: calc(225.5 * var(--u)); font: 600 calc(11.5 * var(--u))/calc(14 * var(--u)) var(--font-sans); letter-spacing: 0.04em; color: var(--color-olive); }
 .card__text { left: calc(17 * var(--u)); top: calc(244.5 * var(--u)); width: calc(276 * var(--u)); margin: 0; font: 400 calc(12.8 * var(--u))/calc(16 * var(--u)) var(--font-sans); color: var(--color-text); }
 .card__arrow { left: calc(272 * var(--u)); top: calc(285 * var(--u)); width: calc(21 * var(--u)); height: calc(12.4 * var(--u)); }

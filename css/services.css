@@ -31,6 +31,9 @@
 .card__title { left: calc(21 * var(--u)); top: calc(266.8 * var(--u)); font: 700 calc(19 * var(--u))/calc(24 * var(--u)) var(--font-sans); letter-spacing: 0.05em; color: var(--color-text); }
 .card__text { left: calc(21 * var(--u)); top: calc(297 * var(--u)); font: 400 calc(17.8 * var(--u))/calc(21.5 * var(--u)) var(--font-sans); color: var(--color-text); }
 
+.card--two-line .card__title { top: calc(269.8 * var(--u)); line-height: calc(18 * var(--u)); }
+.card--two-line .card__text { top: calc(313 * var(--u)); }
+
 /* ---------- Call to action ---------- */
 .sp-cta { top: calc(1362 * var(--u)); height: calc(117 * var(--u)); background: #58543b; }
 .sp-cta__envelope { left: calc(43 * var(--u)); top: calc(33 * var(--u)); width: calc(71.5 * var(--u)); height: calc(50 * var(--u)); }
