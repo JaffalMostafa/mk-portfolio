@@ -1,0 +1,49 @@
+/* ==========================================================================
+   MK Portfolio - All Projects page
+   Design reference: design/all-projects.jpeg  (1024 x 1516 design units)
+   Same approach as the other pages: everything scales with the viewport width.
+   Fonts, colour tokens and base resets come from styles.css.
+   ========================================================================== */
+
+.pp { --u: calc(100vw / 1024); position: relative; width: 100%; aspect-ratio: 1024 / 1516; overflow: hidden; container-type: inline-size; background: #fdfdfb; }
+@supports (width: 1cqw) { .pp > header, .pp > section, .pp > footer { --u: calc(100cqw / 1024); } }
+.pp > :where(header, section, footer) { position: absolute; left: 0; width: 100%; }
+
+/* ---------- Hero ---------- */
+.pp-hero { top: 0; height: calc(470 * var(--u)); }
+.pp-hero__image { left: calc(500 * var(--u)); top: 0; width: calc(524 * var(--u)); height: calc(463 * var(--u)); overflow: hidden; margin: 0; }
+.pp-hero__image img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; display: block; }
+.pp-back { left: calc(58 * var(--u)); top: calc(26 * var(--u)); font: 600 calc(12 * var(--u))/calc(16 * var(--u)) var(--font-sans); letter-spacing: 0.08em; color: var(--color-text); }
+.pp-eyebrow { left: calc(58 * var(--u)); top: calc(57 * var(--u)); font: 600 calc(15.5 * var(--u))/calc(20 * var(--u)) var(--font-sans); letter-spacing: 0.0475em; color: var(--color-text); }
+.pp-eyebrow-line { left: calc(191 * var(--u)); top: calc(66 * var(--u)); width: calc(309 * var(--u)); height: calc(1.5 * var(--u)); background: var(--color-olive); }
+.pp-title { z-index: 2; left: calc(50 * var(--u)); top: calc(109.5 * var(--u)); font: 600 calc(105 * var(--u))/calc(81 * var(--u)) var(--font-serif); letter-spacing: -0.03em; color: var(--color-olive); }
+.pp-subtitle { z-index: 2; left: calc(57 * var(--u)); top: calc(282 * var(--u)); font: italic 500 calc(36.6 * var(--u))/calc(38 * var(--u)) var(--font-serif); letter-spacing: -0.01em; color: var(--color-olive); }
+.pp-accent { left: calc(57 * var(--u)); top: calc(372 * var(--u)); width: calc(49 * var(--u)); height: calc(2 * var(--u)); background: var(--color-olive); }
+.pp-intro { left: calc(58 * var(--u)); top: calc(392 * var(--u)); width: calc(432 * var(--u)); margin: 0; font: 400 calc(16.3 * var(--u))/calc(20 * var(--u)) var(--font-sans); color: var(--color-text); }
+
+/* ---------- Grid of projects ---------- */
+.pp-grid { top: calc(473 * var(--u)); height: calc(936 * var(--u)); }
+.pp-grid ul { position: absolute; left: calc(35 * var(--u)); top: 0; width: calc(955 * var(--u)); display: grid; grid-template-columns: repeat(3, calc(310 * var(--u))); column-gap: calc(12.5 * var(--u)); row-gap: calc(18 * var(--u)); }
+.card { position: relative; height: calc(300 * var(--u)); background: #faf9f4; }
+.card__link { position: absolute; inset: 0; display: block; }
+.card__photo { position: absolute; left: 0; top: 0; width: 100%; height: calc(188 * var(--u)); object-fit: cover; display: block; }
+.card__photo--city { object-position: 50% 55%; }
+.card__title { left: calc(17 * var(--u)); top: calc(194 * var(--u)); font: 600 calc(20 * var(--u))/calc(24 * var(--u)) var(--font-serif); color: var(--color-text); }
+.card__title--long { font-size: calc(18 * var(--u)); }
+.card__cats { left: calc(17 * var(--u)); top: calc(225.5 * var(--u)); font: 600 calc(11.5 * var(--u))/calc(14 * var(--u)) var(--font-sans); letter-spacing: 0.04em; color: var(--color-olive); }
+.card__text { left: calc(17 * var(--u)); top: calc(244.5 * var(--u)); width: calc(276 * var(--u)); margin: 0; font: 400 calc(12.8 * var(--u))/calc(16 * var(--u)) var(--font-sans); color: var(--color-text); }
+.card__arrow { left: calc(272 * var(--u)); top: calc(285 * var(--u)); width: calc(21 * var(--u)); height: calc(12.4 * var(--u)); }
+
+/* ---------- Call to action ---------- */
+.pp-cta { top: calc(1428 * var(--u)); height: calc(88 * var(--u)); }
+.pp-cta__band { left: calc(29 * var(--u)); top: 0; width: calc(965 * var(--u)); height: calc(88 * var(--u)); background: #544c35; border-radius: calc(9 * var(--u)); }
+.pp-cta__envelope { left: calc(60 * var(--u)); top: calc(24 * var(--u)); width: calc(58 * var(--u)); height: calc(40.6 * var(--u)); }
+.pp-cta__title { left: calc(148 * var(--u)); top: calc(19 * var(--u)); font: 600 calc(28 * var(--u))/calc(29 * var(--u)) var(--font-serif); letter-spacing: -0.02em; color: var(--color-sage); }
+.pp-cta__title em { font-style: italic; font-weight: 700; }
+.pp-cta__divider { top: calc(21 * var(--u)); width: calc(1 * var(--u)); height: calc(50 * var(--u)); background: rgba(223, 219, 184, 0.6); }
+.pp-cta__divider--1 { left: calc(468 * var(--u)); }
+.pp-cta__divider--2 { left: calc(766 * var(--u)); }
+.pp-cta__text { left: calc(505 * var(--u)); top: calc(28 * var(--u)); font: 400 calc(15.4 * var(--u))/calc(22 * var(--u)) var(--font-sans); color: var(--color-sage); }
+.pp-cta__button { left: calc(798 * var(--u)); top: calc(25 * var(--u)); width: calc(167 * var(--u)); height: calc(43 * var(--u)); border: calc(1 * var(--u)) solid var(--color-sage); border-radius: calc(22 * var(--u)); }
+.pp-cta__button-label { left: calc(16 * var(--u)); top: calc(10 * var(--u)); font: 600 calc(15 * var(--u))/calc(22 * var(--u)) var(--font-sans); color: var(--color-sage); }
+.pp-cta__button-arrow { left: calc(126 * var(--u)); top: calc(15 * var(--u)); width: calc(27 * var(--u)); height: calc(12 * var(--u)); }
