@@ -1,0 +1,45 @@
+/* ==========================================================================
+   MK Portfolio - Services page
+   Design reference: design/all-services-page.jpeg  (1027 x 1479 design units)
+   Same approach as the Home page: everything scales proportionally with the
+   viewport width.  Fonts, colour tokens and base resets come from styles.css.
+   ========================================================================== */
+
+.sp { --u: calc(100vw / 1027); position: relative; width: 100%; aspect-ratio: 1027 / 1479; overflow: hidden; container-type: inline-size; background: #fdfdfb; }
+@supports (width: 1cqw) { .sp > header, .sp > section, .sp > footer { --u: calc(100cqw / 1027); } }
+.sp > :where(header, section, footer) { position: absolute; left: 0; width: 100%; }
+
+/* ---------- Hero ---------- */
+.sp-hero { top: 0; height: calc(570 * var(--u)); }
+.sp-back { left: calc(56 * var(--u)); top: calc(40 * var(--u)); font: 600 calc(12 * var(--u))/calc(16 * var(--u)) var(--font-sans); letter-spacing: 0.08em; color: var(--color-text); }
+.sp-eyebrow { left: calc(56 * var(--u)); top: calc(100.3 * var(--u)); font: 600 calc(14 * var(--u))/calc(18 * var(--u)) var(--font-sans); letter-spacing: 0.0475em; color: var(--color-text); }
+.sp-eyebrow-line { left: calc(176 * var(--u)); top: calc(108 * var(--u)); width: calc(288 * var(--u)); height: calc(1.5 * var(--u)); background: var(--color-olive); }
+.sp-title { z-index: 2; left: calc(45 * var(--u)); top: calc(115.5 * var(--u)); font: 600 calc(166 * var(--u))/calc(166 * var(--u)) var(--font-serif); letter-spacing: -0.03em; color: var(--color-olive); }
+.sp-subtitle { left: calc(55 * var(--u)); top: calc(266 * var(--u)); font: 600 calc(53.5 * var(--u))/calc(58 * var(--u)) var(--font-serif); letter-spacing: -0.02em; color: var(--color-text); }
+.sp-subtitle em { font-style: italic; font-weight: 700; color: var(--color-olive); }
+.sp-accent { left: calc(56 * var(--u)); top: calc(397 * var(--u)); width: calc(53 * var(--u)); height: calc(3 * var(--u)); background: var(--color-olive); }
+.sp-intro { left: calc(56 * var(--u)); top: calc(420.5 * var(--u)); width: calc(366 * var(--u)); margin: 0; font: 400 calc(18.9 * var(--u))/calc(21.5 * var(--u)) var(--font-sans); color: var(--color-text); }
+.sp-hero__image { left: calc(464 * var(--u)); top: 0; width: calc(563 * var(--u)); height: calc(553 * var(--u)); overflow: hidden; margin: 0; }
+.sp-hero__image img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; display: block; }
+
+/* ---------- Grid of services ---------- */
+.sp-grid { top: calc(568 * var(--u)); height: calc(787 * var(--u)); }
+.sp-grid ul { position: absolute; left: calc(45 * var(--u)); top: 0; width: calc(937 * var(--u)); display: grid; grid-template-columns: repeat(3, calc(301 * var(--u))); column-gap: calc(17 * var(--u)); row-gap: calc(27 * var(--u)); }
+.card { position: relative; height: calc(380 * var(--u)); background: #f8f7f2; }
+.card__photo { position: absolute; left: 0; top: 0; width: 100%; height: calc(206 * var(--u)); object-fit: cover; display: block; }
+.card__icon { left: calc(11.8 * var(--u)); top: calc(192.4 * var(--u)); width: calc(73 * var(--u)); height: calc(72 * var(--u)); }
+.card__title { left: calc(21 * var(--u)); top: calc(266.8 * var(--u)); font: 700 calc(19 * var(--u))/calc(24 * var(--u)) var(--font-sans); letter-spacing: 0.05em; color: var(--color-text); }
+.card__text { left: calc(21 * var(--u)); top: calc(297 * var(--u)); font: 400 calc(17.8 * var(--u))/calc(21.5 * var(--u)) var(--font-sans); color: var(--color-text); }
+
+/* ---------- Call to action ---------- */
+.sp-cta { top: calc(1362 * var(--u)); height: calc(117 * var(--u)); background: #58543b; }
+.sp-cta__envelope { left: calc(43 * var(--u)); top: calc(33 * var(--u)); width: calc(71.5 * var(--u)); height: calc(50 * var(--u)); }
+.sp-cta__title { left: calc(137 * var(--u)); top: calc(25 * var(--u)); font: 600 calc(35.5 * var(--u))/calc(36 * var(--u)) var(--font-serif); letter-spacing: -0.02em; color: var(--color-sage); }
+.sp-cta__title em { font-style: italic; font-weight: 700; }
+.sp-cta__divider { top: calc(27 * var(--u)); width: calc(1 * var(--u)); height: calc(65 * var(--u)); background: rgba(223, 219, 184, 0.6); }
+.sp-cta__divider--1 { left: calc(477 * var(--u)); }
+.sp-cta__divider--2 { left: calc(768 * var(--u)); }
+.sp-cta__text { left: calc(506 * var(--u)); top: calc(37 * var(--u)); font: 400 calc(16.9 * var(--u))/calc(22 * var(--u)) var(--font-sans); color: var(--color-sage); }
+.sp-cta__button { left: calc(806 * var(--u)); top: calc(34 * var(--u)); width: calc(176 * var(--u)); height: calc(52 * var(--u)); border: calc(1 * var(--u)) solid var(--color-sage); border-radius: calc(26 * var(--u)); }
+.sp-cta__button-label { left: calc(16 * var(--u)); top: calc(14.5 * var(--u)); font: 600 calc(15.8 * var(--u))/calc(22 * var(--u)) var(--font-sans); color: var(--color-sage); }
+.sp-cta__button-arrow { left: calc(131 * var(--u)); top: calc(19 * var(--u)); width: calc(27 * var(--u)); height: calc(12 * var(--u)); }
