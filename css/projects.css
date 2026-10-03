@@ -5,7 +5,7 @@
    Fonts, colour tokens and base resets come from styles.css.
    ========================================================================== */
 
-.pp { --u: calc(100vw / 1024); position: relative; width: 100%; aspect-ratio: 1024 / 1516; overflow: hidden; container-type: inline-size; background: #fdfdfb; }
+.pp { --u: calc(100vw / 1024); position: relative; width: 100%; aspect-ratio: 1024 / 1670; overflow: hidden; container-type: inline-size; background: #fdfdfb; }
 @supports (width: 1cqw) { .pp > header, .pp > section, .pp > footer { --u: calc(100cqw / 1024); } }
 .pp > :where(header, section, footer) { position: absolute; left: 0; width: 100%; }
 
@@ -47,3 +47,12 @@
 .pp-cta__button { left: calc(798 * var(--u)); top: calc(25 * var(--u)); width: calc(167 * var(--u)); height: calc(43 * var(--u)); border: calc(1 * var(--u)) solid var(--color-sage); border-radius: calc(22 * var(--u)); }
 .pp-cta__button-label { left: calc(16 * var(--u)); top: calc(10 * var(--u)); font: 600 calc(15 * var(--u))/calc(22 * var(--u)) var(--font-sans); color: var(--color-sage); }
 .pp-cta__button-arrow { left: calc(126 * var(--u)); top: calc(15 * var(--u)); width: calc(27 * var(--u)); height: calc(12 * var(--u)); }
+
+/* ---------- Site footer (same as Home page, drawn on a 1920-unit scale) ---------- */
+.pp > .sp-footer { --u: calc(100vw / 1920); position: absolute; left: 0; width: 100%; top: calc(2897.5 * var(--u)); height: calc(160 * var(--u)); }
+@supports (width: 1cqw) { .pp > .sp-footer { --u: calc(100cqw / 1920); } }
+.sp-footer--projects .footer__connect { right: calc(56.25 * var(--u)); }
+.sp-footer--projects .footer__social--linkedin { left: calc(1709.75 * var(--u)); }
+.sp-footer--projects .footer__social--whatsapp { left: calc(1758.75 * var(--u)); }
+.sp-footer--projects .footer__name { left: calc(54.4 * var(--u)); }
+.sp-footer--projects .footer__tagline { left: calc(55.9 * var(--u)); }

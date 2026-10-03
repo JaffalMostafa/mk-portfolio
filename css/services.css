@@ -5,7 +5,7 @@
    viewport width.  Fonts, colour tokens and base resets come from styles.css.
    ========================================================================== */
 
-.sp { --u: calc(100vw / 1027); position: relative; width: 100%; aspect-ratio: 1027 / 1479; overflow: hidden; container-type: inline-size; background: #fdfdfb; }
+.sp { --u: calc(100vw / 1027); position: relative; width: 100%; aspect-ratio: 1027 / 1634; overflow: hidden; container-type: inline-size; background: #fdfdfb; }
 @supports (width: 1cqw) { .sp > header, .sp > section, .sp > footer { --u: calc(100cqw / 1027); } }
 .sp > :where(header, section, footer) { position: absolute; left: 0; width: 100%; }
 
@@ -43,3 +43,12 @@
 .sp-cta__button { left: calc(806 * var(--u)); top: calc(34 * var(--u)); width: calc(176 * var(--u)); height: calc(52 * var(--u)); border: calc(1 * var(--u)) solid var(--color-sage); border-radius: calc(26 * var(--u)); }
 .sp-cta__button-label { left: calc(16 * var(--u)); top: calc(14.5 * var(--u)); font: 600 calc(15.8 * var(--u))/calc(22 * var(--u)) var(--font-sans); color: var(--color-sage); }
 .sp-cta__button-arrow { left: calc(131 * var(--u)); top: calc(19 * var(--u)); width: calc(27 * var(--u)); height: calc(12 * var(--u)); }
+
+/* ---------- Site footer (same as Home page, drawn on a 1920-unit scale) ---------- */
+.sp > .sp-footer { --u: calc(100vw / 1920); position: absolute; left: 0; width: 100%; top: calc(2820 * var(--u)); height: calc(160 * var(--u)); }
+@supports (width: 1cqw) { .sp > .sp-footer { --u: calc(100cqw / 1920); } }
+.sp-footer--services .footer__connect { right: calc(84.2 * var(--u)); }
+.sp-footer--services .footer__social--linkedin { left: calc(1681.8 * var(--u)); }
+.sp-footer--services .footer__social--whatsapp { left: calc(1730.8 * var(--u)); }
+.sp-footer--services .footer__name { left: calc(104.7 * var(--u)); }
+.sp-footer--services .footer__tagline { left: calc(106.2 * var(--u)); }
