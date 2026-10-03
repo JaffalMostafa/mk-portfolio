@@ -5,7 +5,7 @@
    viewport width.  Fonts, colour tokens and base resets come from styles.css.
    ========================================================================== */
 
-.sp { --u: calc(100vw / 1027); position: relative; width: 100%; aspect-ratio: 1027 / 1630; overflow: hidden; container-type: inline-size; background: #fdfdfb; }
+.sp { --u: calc(100vw / 1027); position: relative; width: 100%; aspect-ratio: 1027 / 1979; overflow: hidden; container-type: inline-size; background: #fdfdfb; }
 @supports (width: 1cqw) { .sp > header, .sp > section, .sp > footer { --u: calc(100cqw / 1027); } }
 .sp > :where(header, section, footer) { position: absolute; left: 0; width: 100%; }
 
@@ -34,8 +34,12 @@
 .card--two-line .card__title { top: calc(269.8 * var(--u)); line-height: calc(18 * var(--u)); }
 .card--two-line .card__text { top: calc(313 * var(--u)); }
 
+/* ---------- Banner image between the list and the contact box (15px above and below) ---------- */
+.sp-banner { top: calc(1370 * var(--u)); height: calc(348.6 * var(--u)); }
+.sp-banner img { position: absolute; left: calc(45 * var(--u)); top: 0; width: calc(937 * var(--u)); height: calc(348.6 * var(--u)); object-fit: cover; display: block; }
+
 /* ---------- Call to action (same box as the Projects page) ---------- */
-.sp-cta { top: calc(1385 * var(--u)); height: calc(88 * var(--u)); }
+.sp-cta { top: calc(1734 * var(--u)); height: calc(88 * var(--u)); }
 .sp-cta__band { left: calc(29 * var(--u)); top: 0; width: calc(969 * var(--u)); height: calc(88 * var(--u)); background: #544c35; border-radius: calc(9 * var(--u)); }
 .sp-cta__envelope { left: calc(60 * var(--u)); top: calc(24 * var(--u)); width: calc(58 * var(--u)); height: calc(40.6 * var(--u)); }
 .sp-cta__title { left: calc(148 * var(--u)); top: calc(19 * var(--u)); font: 600 calc(28 * var(--u))/calc(29 * var(--u)) var(--font-serif); letter-spacing: -0.02em; color: var(--color-sage); }
@@ -48,7 +52,7 @@
 .sp-cta__button-label { left: calc(16 * var(--u)); top: calc(10 * var(--u)); font: 600 calc(15 * var(--u))/calc(22 * var(--u)) var(--font-sans); color: var(--color-sage); }
 .sp-cta__button-arrow { left: calc(126 * var(--u)); top: calc(15 * var(--u)); width: calc(27 * var(--u)); height: calc(12 * var(--u)); }
 /* ---------- Site footer (same as Home page, drawn on a 1920-unit scale) ---------- */
-.sp > .sp-footer { --u: calc(100vw / 1920); position: absolute; left: 0; width: 100%; top: calc(2810 * var(--u)); height: calc(160 * var(--u)); }
+.sp > .sp-footer { --u: calc(100vw / 1920); position: absolute; left: 0; width: 100%; top: calc(3462.4 * var(--u)); height: calc(160 * var(--u)); }
 @supports (width: 1cqw) { .sp > .sp-footer { --u: calc(100cqw / 1920); } }
 .sp-footer--services .footer__connect { right: calc(84.2 * var(--u)); }
 .sp-footer--services .footer__social--linkedin { left: calc(1681.8 * var(--u)); }
